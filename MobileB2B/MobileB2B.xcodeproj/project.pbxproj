@@ -13,7 +13,7 @@
 		9A5CD6A61C29DE0800025F27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB922231C2977F7007549BA /* Assets.xcassets */; };
 		9A5CD6A81C29DE0800025F27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB922201C2977F7007549BA /* Main.storyboard */; };
 		9A5CD6B31C29DEC100025F27 /* ImagesPlugtTeste.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CD6B21C29DEC100025F27 /* ImagesPlugtTeste.xcassets */; };
-		9A5CD6B51C29DFFD00025F27 /* Plugt.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CD6B41C29DFFD00025F27 /* Plugt.plist */; };
+		9A5CD6B51C29DFFD00025F27 /* PlugtTeste.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CD6B41C29DFFD00025F27 /* PlugtTeste.plist */; };
 		9AB9221D1C2977F7007549BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9221C1C2977F7007549BA /* AppDelegate.swift */; };
 		9AB9221F1C2977F7007549BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9221E1C2977F7007549BA /* ViewController.swift */; };
 		9AB922221C2977F7007549BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB922201C2977F7007549BA /* Main.storyboard */; };
@@ -21,6 +21,7 @@
 		9AB922271C2977F7007549BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB922251C2977F7007549BA /* LaunchScreen.storyboard */; };
 		9AB922321C2977F9007549BA /* MobileB2BTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB922311C2977F9007549BA /* MobileB2BTests.swift */; };
 		9AB9223D1C2977F9007549BA /* MobileB2BUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9223C1C2977F9007549BA /* MobileB2BUITests.swift */; };
+		9ACA07D31C2AE1660029231D /* logo_app.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACA07D21C2AE1660029231D /* logo_app.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,7 @@
 /* Begin PBXFileReference section */
 		9A5CD6AC1C29DE0800025F27 /* PlugtTeste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlugtTeste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5CD6B21C29DEC100025F27 /* ImagesPlugtTeste.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImagesPlugtTeste.xcassets; sourceTree = "<group>"; };
-		9A5CD6B41C29DFFD00025F27 /* Plugt.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Plugt.plist; sourceTree = "<group>"; };
+		9A5CD6B41C29DFFD00025F27 /* PlugtTeste.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlugtTeste.plist; sourceTree = "<group>"; };
 		9AB922191C2977F7007549BA /* MobileB2B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileB2B.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB9221C1C2977F7007549BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AB9221E1C2977F7007549BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		9AB922381C2977F9007549BA /* MobileB2BUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileB2BUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB9223C1C2977F9007549BA /* MobileB2BUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileB2BUITests.swift; sourceTree = "<group>"; };
 		9AB9223E1C2977F9007549BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ACA07D21C2AE1660029231D /* logo_app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_app.png; path = ../../../../../firenze/Clientes/teste/logo_app.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,8 @@
 		9A5CD6B11C29DEC100025F27 /* PlugtTeste */ = {
 			isa = PBXGroup;
 			children = (
-				9A5CD6B41C29DFFD00025F27 /* Plugt.plist */,
+				9ACA07D21C2AE1660029231D /* logo_app.png */,
+				9A5CD6B41C29DFFD00025F27 /* PlugtTeste.plist */,
 				9A5CD6B21C29DEC100025F27 /* ImagesPlugtTeste.xcassets */,
 			);
 			name = PlugtTeste;
@@ -292,7 +295,8 @@
 				9A5CD6B31C29DEC100025F27 /* ImagesPlugtTeste.xcassets in Resources */,
 				9A5CD6A61C29DE0800025F27 /* Assets.xcassets in Resources */,
 				9A5CD6A81C29DE0800025F27 /* Main.storyboard in Resources */,
-				9A5CD6B51C29DFFD00025F27 /* Plugt.plist in Resources */,
+				9ACA07D31C2AE1660029231D /* logo_app.png in Resources */,
+				9A5CD6B51C29DFFD00025F27 /* PlugtTeste.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconPlugtTeste;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "$(SRCROOT)/MobileB2B/Clientes/Plugt/Plugt.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MobileB2B/Clientes/Plugt/PlugtTeste.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "trovata.plugt-teste";
@@ -410,7 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconPlugtTeste;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "$(SRCROOT)/MobileB2B/Clientes/Plugt/Plugt.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MobileB2B/Clientes/Plugt/PlugtTeste.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "trovata.plugt-teste";

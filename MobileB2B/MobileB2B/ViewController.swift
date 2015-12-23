@@ -8,27 +8,35 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIWebViewDelegate {
 
+    @IBOutlet var activityLoading: UIActivityIndicatorView!
     @IBOutlet var webViewMaster: UIWebView!
     @IBOutlet var navigationBarMaster: UINavigationBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Abriu o View Controller...")
         
-        //Set URL
-        setUrlWebView()
+        webViewMaster.hidden = true
+        activityLoading.hidden = false
+        activityLoading.startAnimating()
         
         //Cria a logo
-        let btnName = UIButton()
-        btnName.setImage(UIImage(named: "ImagesPlugtTeste"), forState: .Normal)
-        btnName.frame = CGRectMake(0, 0, 40, 40)
-        btnName.addTarget(self, action: "actionLogoPressed", forControlEvents: .TouchUpInside)
+        let image = UIImage(named: "logo_app.png")
+        
+        let buttonLogo = UIButton()
+        buttonLogo.setImage(image, forState: .Normal)
+        buttonLogo.frame = CGRectMake(0, 0, 30, 30)
+        buttonLogo.addTarget(self, action: "actionLogoPressed", forControlEvents: .TouchUpInside)
+            
+        buttonLogo.layer.masksToBounds = true
+        buttonLogo.layer.borderColor = UIColor.whiteColor().CGColor
+        buttonLogo.layer.cornerRadius = 15
+        buttonLogo.clipsToBounds = true
         
         //Exibe a Logo
         let rightBarButton = UIBarButtonItem()
-        rightBarButton.customView = btnName;
+        rightBarButton.customView = buttonLogo
         self.navigationItem.leftBarButtonItem = rightBarButton
         
         //Botoes da direita
@@ -36,11 +44,14 @@ class ViewController: UIViewController {
         let refreshButton = UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: "actionReloadPage")
         let replyButton = UIBarButtonItem(barButtonSystemItem: .Reply, target: self, action: "actionBackPage")
         navigationItem.rightBarButtonItems = [replyButton, refreshButton, actionButton]
+        
+        setUrlWebView()
     }
     
     func setUrlWebView(){
         let url = NSURL (string: "http://plugt-teste.trovata.com.br")
         let requestObj = NSURLRequest(URL: url!)
+        webViewMaster.delegate = self
         webViewMaster.loadRequest(requestObj)
     }
     
@@ -68,12 +79,13 @@ class ViewController: UIViewController {
         print(currentURL)
     }
     
-    override func viewDidAppear(animated: Bool) {
-        navigationItem.title = "Mobile B2B Plugt"
+    func webViewDidFinishLoad(webView: UIWebView) {
+        webViewMaster.hidden = false
+        activityLoading.stopAnimating()
+        activityLoading.hidden = true
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

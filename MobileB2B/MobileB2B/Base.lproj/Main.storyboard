@@ -10,12 +10,17 @@
         <scene sceneID="beC-hp-kfq">
             <objects>
                 <navigationController id="KWp-t5-NLC" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="64B-WS-FUW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="64B-WS-FUW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="erX-X5-6o8">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="mqK-0T-LFh" kind="relationship" relationship="rootViewController" id="Gne-k6-l3O"/>
                     </connections>
@@ -36,35 +41,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" placeholderIntrinsicWidth="37" placeholderIntrinsicHeight="37" layoutMarginsFollowReadableWidth="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="lXK-ea-uL9">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                             <webView contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="MWP-Ks-eqK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="MWP-Ks-eqK" secondAttribute="height" multiplier="375:667" id="B9m-ht-ljA"/>
-                                    <constraint firstAttribute="width" secondItem="MWP-Ks-eqK" secondAttribute="height" multiplier="375:667" id="dty-2Z-T5V"/>
-                                    <constraint firstAttribute="width" secondItem="MWP-Ks-eqK" secondAttribute="height" multiplier="375:667" id="eSk-1y-5d8"/>
-                                    <constraint firstAttribute="width" secondItem="MWP-Ks-eqK" secondAttribute="height" multiplier="375:667" id="ipM-Rx-vxR"/>
-                                    <constraint firstAttribute="width" secondItem="MWP-Ks-eqK" secondAttribute="height" multiplier="375:667" id="ldA-mc-cmn"/>
+                                    <constraint firstAttribute="width" secondItem="MWP-Ks-eqK" secondAttribute="height" multiplier="375:667" constant="35.982008995502269" id="B9m-ht-ljA"/>
+                                    <constraint firstAttribute="width" secondItem="MWP-Ks-eqK" secondAttribute="height" multiplier="375:667" constant="35.982008995502269" id="dty-2Z-T5V"/>
+                                    <constraint firstAttribute="width" secondItem="MWP-Ks-eqK" secondAttribute="height" multiplier="375:667" constant="35.982008995502269" id="eSk-1y-5d8"/>
+                                    <constraint firstAttribute="width" secondItem="MWP-Ks-eqK" secondAttribute="height" multiplier="375:667" constant="35.982008995502269" id="ipM-Rx-vxR"/>
+                                    <constraint firstAttribute="width" secondItem="MWP-Ks-eqK" secondAttribute="height" multiplier="375:667" constant="35.982008995502269" id="ldA-mc-cmn"/>
                                 </constraints>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="lXK-ea-uL9" firstAttribute="centerY" secondItem="a4O-SW-V5b" secondAttribute="centerY" id="2WG-Bg-7Xo"/>
                             <constraint firstItem="MWP-Ks-eqK" firstAttribute="bottom" secondItem="HJo-Jc-1c3" secondAttribute="top" id="4cI-9X-cx3"/>
                             <constraint firstItem="MWP-Ks-eqK" firstAttribute="leading" secondItem="a4O-SW-V5b" secondAttribute="leading" id="Q3n-gb-ptg"/>
-                            <constraint firstItem="MWP-Ks-eqK" firstAttribute="top" secondItem="a4O-SW-V5b" secondAttribute="top" id="cFl-7G-jQH"/>
+                            <constraint firstItem="lXK-ea-uL9" firstAttribute="centerX" secondItem="MWP-Ks-eqK" secondAttribute="centerX" id="VXR-mU-c6x"/>
+                            <constraint firstItem="MWP-Ks-eqK" firstAttribute="top" secondItem="a4O-SW-V5b" secondAttribute="top" constant="64" id="cFl-7G-jQH"/>
                             <constraint firstItem="MWP-Ks-eqK" firstAttribute="centerX" secondItem="a4O-SW-V5b" secondAttribute="centerX" id="vHY-mh-Riv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AzG-Mh-Mqo"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="activityLoading" destination="lXK-ea-uL9" id="i2r-Mr-g7S"/>
                         <outlet property="webViewMaster" destination="MWP-Ks-eqK" id="WaU-0h-HMJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LaX-aO-WJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="715.5" y="16.5"/>
+            <point key="canvasLocation" x="716.5" y="16.5"/>
         </scene>
     </scenes>
 </document>
