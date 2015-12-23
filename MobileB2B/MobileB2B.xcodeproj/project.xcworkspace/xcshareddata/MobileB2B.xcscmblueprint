@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B515F35D5E162ED875363EE81D3E67E34CC2FA0F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "ab60aadc-3373-4f52-82ce-a687a1bcc48b++6003" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B515F35D5E162ED875363EE81D3E67E34CC2FA0F" : 0,
+    "ab60aadc-3373-4f52-82ce-a687a1bcc48b++6003" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A8CA5E1B-925D-4C9A-A7F8-4AA2D6163B3D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B515F35D5E162ED875363EE81D3E67E34CC2FA0F" : "LearningSwift\/",
+    "ab60aadc-3373-4f52-82ce-a687a1bcc48b++6003" : "firenze\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MobileB2B",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MobileB2B\/MobileB2B.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Diego5529\/LearningSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B515F35D5E162ED875363EE81D3E67E34CC2FA0F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/svn.trovata.com.br",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ab60aadc-3373-4f52-82ce-a687a1bcc48b++6003"
+    }
+  ]
+}
